@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hola Mundo en Java | VS Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin: 30px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .icon {
+            font-size: 40px;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .step {
+            background: #eef2ff;
+            padding: 15px;
+            border-left: 5px solid #6366f1;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        pre {
+            background: #111827;
+            color: #e5e7eb;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .img-demo {
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #e5e7eb;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Manual: “Hola Mundo” en Java</h1>
+    <p>Usando Visual Studio Code · Desde Cero</p>
+	<p>Profesor: Fernando Aristimuño</P>
+</header>
+
+<main>
+
+<section>
+    <h2>🎯 Objetivo</h2>
+    <p>
+        Aprender a crear y ejecutar un programa
+        <strong>Hola Mundo</strong> en Java usando Visual Studio Code,
+        sin conocimientos previos.
+    </p>
+</section>
+
+<section>
+    <h2>🧩 ¿Qué vamos a necesitar?</h2>
+    <div class="icon">💻 ☕ 🌐</div>
+    <ul>
+        <li>Una computadora (Windows, macOS o Linux)</li>
+        <li>Conexión a Internet</li>
+        <li>Java (JDK)</li>
+        <li>Visual Studio Code</li>
+    </ul>
+</section>
+
+<section>
+    <h2>🔹 Paso 1: Instalar Java (JDK)</h2>
+
+    <div class="step">
+        <div class="icon">☕⬇️</div>
+        <p>Visita la página oficial de Java:</p>
+        <p><strong>https://www.oracle.com/java/technologies/downloads/</strong></p>
+        <p>Descarga <strong>JDK 17</strong> o superior y sigue las instrucciones.</p>
+    </div>
+
+    <div class="step">
+        <div class="icon">✅</div>
+        <p>Verifica la instalación desde la terminal:</p>
+        <pre>java -version</pre>
+    </div>
+</section>
+
+<section>
+    <h2>🔹 Paso 2: Instalar Visual Studio Code</h2>
+
+    <div class="step">
+        <div class="icon">🧩</div>
+        <p>Descárgalo desde:</p>
+        <p><strong>https://code.visualstudio.com/</strong></p>
+        <p>Instálalo con la configuración por defecto.</p>
+    </div>
+</section>
+
+<section>
+    <h2>🔹 Paso 3: Instalar soporte para Java</h2>
+    <div class="icon">🛠️</div>
+    <ul>
+        <li>Abrir Visual Studio Code</li>
+        <li>Ir a Extensiones</li>
+        <li>Buscar <strong>Extension Pack for Java</strong></li>
+        <li>Instalar</li>
+    </ul>
+</section>
+
+<section>
+    <h2>🔹 Paso 4: Crear el proyecto</h2>
+    <div class="icon">📁</div>
+
+    <p>
+        Crea una carpeta donde guardarás tu programa Java.
+        Haz clic derecho en el escritorio y selecciona
+        <strong>Nuevo → Carpeta</strong>.
+    </p>
+
+    <figure>
+        <img src="images/CreaCarpeta.png"
+             alt="Crear carpeta en Windows"
+             class="img-demo">
+        <figcaption>Crear una nueva carpeta</figcaption>
+    </figure>
+
+    <p>Nombra la carpeta como:</p>
+    <pre>HolaMundoJava</pre>
+
+    <p>
+        Luego abre la carpeta desde Visual Studio Code:
+        <strong>Archivo → Abrir carpeta</strong>
+    </p>
+</section>
+
+<section>
+    <h2>🔹 Paso 5: Crear el archivo Java</h2>
+    <div class="icon">📄</div>
+
+    <p>Crea un archivo llamado:</p>
+    <pre>HolaMundo.java</pre>
+	<img src="images/NewFileJava.png"
+	alt="Crear nuevo archivo"
+             class="img-demo">
+
+    <figure>
+        <img src="images/nombre_del_archivo.png"
+             alt="Crear archivo HolaMundo.java"
+             class="img-demo">
+        <figcaption>Creación del archivo Java</figcaption>
+    </figure>
+</section>
+
+<section>
+    <h2>✍️ Paso 6: Escribir el código</h2>
+	<img src="images/ClaeHolaMundo.png"
+	alt = "crear la clase"
+	class="img-demo">
+
+    <pre>
+public class HolaMundo {
+
+    public static void main(String[] args) {
+        System.out.println("Hola Mundo");
+    }
+
+}
+    </pre>
+</section>
+
+<section>
+    <h2>▶️ Paso 7: Ejecutar el programa</h2>
+    <div class="icon">🚀</div>
+    <p>Opción 1: Presiona el botón ▶ en VS Code</p>
+    <p>Opción 2: Usa la terminal:</p>
+    <pre>
+javac HolaMundo.java
+java HolaMundo
+    </pre>
+</section>
+
+<section>
+    <h2>✅ Resultado esperado</h2>
+    <div class="icon">🎉</div>
+    <pre>Hola Mundo</pre>
+</section>
+
+</main>
+
+<footer>
+    <p>Manual educativo · Java + Visual Studio Code</p>
+</footer>
+
+</body>
+</html>
